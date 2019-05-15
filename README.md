@@ -2,6 +2,8 @@
 
 This project has been made by a group of 4 people including myself. Each worked on it during an average time of 125 hours.
 
+The front-end is in Javascript and the back-end in Java.
+
 Before lauching the project, you need to replace the values of these keys by yours in the prod.properties and test.properties files: dbusername, dbpassword, dbname, dbip, dbport, svPort, jwtSecret. The server IP is assumed to be local.
  
 You also need to create your own database with those database values (using pgadmin for example) and run the script init.sql to fill this database.
