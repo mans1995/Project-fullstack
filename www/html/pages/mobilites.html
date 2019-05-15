@@ -1,0 +1,72 @@
+<div class="page" id="page-mobilites" style="display:none;">
+    <h2>Les mobilités</h2>
+    <form id="form-rechercherMobilites" class="m-2">
+        <div class="form-row">
+            <div class="col">
+                <label for="anneeAcademique-rechercherMobilites">Année académique(cf. rentrée scolaire) :</label>
+                <input type="number" id="anneeAcademique-rechercherMobilites" class="form-control">
+            </div>
+            <div class="col">
+                <label for="etat-rechercherMobilites">Etat :</label>
+                <select id="etat-rechercherMobilites" class="form-control">
+                    <option value="null">-----</option>
+                    <option value="creee">Créée</option>
+                    <option value="en preparation">En préparation</option>
+                    <option value="a payer">A payer</option>
+                    <option value="premier paiement demande">1er paiement</option>
+                    <option value="a payer solde">A payer le solde</option>
+                    <option value="second paiement demande">2eme paiement</option>
+                    <option value="annulee">Annulée</option>
+                </select>
+            </div>
+            <div class="col-2 mt-auto">
+                <button class="btn btn-primary align-self-center" id="btnRecherche-mobilites">Rechercher</button>
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-secondary" id="resetListeMobilites">Reinitialiser / Rafraichir la liste</button>
+    <div class="table-responsive">
+        <table class="table text-center my-2" id="tableMobilites">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Programme</th>
+                    <th scope="col">Nom et prénom</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Partenaire</th>
+                    <th scope="col">Departement</th>
+                    <th scope="col">Pays</th>
+                    <th scope="col">Quadri</th>
+                    <th scope="col">Année académique</th>
+                    <th scope="col">Etat</th>
+                    <th scope="col">Etat avant annulation</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="annulerMobilite" tabindex="-1" role="dialog" aria-labelledby="annulerMobiliteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titreAnnulerMobilite">Annulation de la mobilité</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="formAnnulerMobilite">
+                    <div class="modal-body">
+                        <h6>Entrez la raison de l'annulation :</h6>
+                        <input type="text" class="form-control" id="annulerMobilite-raison" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <button type="submit" class="btn btn-primary"
+                            id="btnAnnulerMobilite-confirmer">Confirmer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

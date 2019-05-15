@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>MobEras</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/res/bootstrap.min.css">
+    <link rel="stylesheet" href="/res/simple-sidebar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+
+<body class="bg-light">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper" style="display:none;">
+            <div class="sidebar-heading">MobEras</div>
+            <div class="list-group list-group-flush">
+                <button class="btn btn-link list-group-item list-group-item-action bg-light"
+                    id="btn-accueil">Accueil</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light"
+                    id="btn-mesInformations">Mes informations</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light"
+                    id="btn-encoderMobilite">Encoder des mobilités</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light" id="btn-lesPartenaires">Les
+                    partenaires</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light" id="btn-lesMobilites">Les
+                    mobilités</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light" id="btn-lesEtudiants">Les
+                    étudiants</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light"
+                    id="btn-lesUtilisateurs">Les utilisateurs</button>
+                <button class="btn btn-link list-group-item list-group-item-action bg-light"
+                    id="btn-listeDesPaiements">Liste des demandes de paiements</button>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light border-bottom" id="navbar"
+                style="display:none;">
+                <button class="btn btn-primary" id="menu-toggle">Menu</button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <div id="msg-bonjour" class="nav-link active">Bonjour, <em></em></div>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-link nav-link" id="btn-deconnexion">Se déconnecter</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div id="pages" class="p-3 my-2">

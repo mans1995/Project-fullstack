@@ -1,0 +1,76 @@
+    <div class="page col-sm-9 col-md-7 col-lg-5 mx-auto" id="page-connexion" style="display:none;">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="connexion-tab" data-toggle="tab" href="#connexion" role="tab"
+                            aria-controls="connexion" aria-selected="true">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="inscription-tab" data-toggle="tab" href="#inscription" role="tab"
+                            aria-controls="inscription" aria-selected="false">Inscription</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body tab-content">
+                <div class="tab-pane fade show active" id="connexion" role="tabpanel" aria-labelledby="connexion-tab">
+                    <form id="form-connexion">
+                        <h1 class="card-title text-center">Connectez-vous</h1>
+                        <div class="form-group form-row">
+                            <label for="pseudo-connexion">Pseudo :</label>
+                            <input type="text" id="pseudo-connexion" class="form-control" required>
+                        </div>
+                        <div class="form-group form-row">
+                            <label for="mdp-connexion">Mot de passe :</label>
+                            <input type="password" id="mdp-connexion" class="form-control" required>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="btn-connexion">Se connecter</button>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-link" id="btn-page-inscription">Pas encore
+                                inscrit
+                                ?
+                                S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="inscription" role="tabpanel" aria-labelledby="inscription-tab">
+                    <form id="form-inscription">
+                        <h1 class="card-title text-center">Inscrivez-vous</h1>
+                        <div class="form-group">
+                            <label for="nom-inscription">Nom :</label>
+                            <input type="text" id="nom-inscription" class="form-control" pattern="[A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*([ '-][A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*)*" title="-1ere lettre en Maj ex: Guillaume" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom-inscription">Prenom :</label>
+                            <input type="text" id="prenom-inscription" class="form-control" pattern="[A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*([ '-][A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*)*" title="-1ere lettre en Maj ex: Le Chat" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pseudo-inscription">Pseudo :</label>
+                            <input type="text" id="pseudo-inscription" class="form-control" pattern="[A-Za-z0-9ÉÈÊËÀÂÇéèêëàâç$_\[\]{}()]{8,}" title="-8 caractères minimum ex: tbillia17" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-inscription">Email :</label>
+                            <input type="email" id="email-inscription" class="form-control" pattern="[a-z]{2,}(\.[a-z]{2,})*@((student\.)?vinci\.be)" title="ex : prenom.nom@student.vinci.be" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mdp-inscription">Mot de passe :</label>
+                            <input type="password" id="mdp-inscription" pattern="[A-Za-z0-9ÉÈÊÀÂÇéèêàâç_µ€£$;:.,!?=+\-*\/%~#\[\]{}()]{8,}" title="-8 caractères minimum" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="verifmdp-inscription">Vérification du mot de passe :</label>
+                            <input type="password" id="verifmdp-inscription" class="form-control" required>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" id="btn-inscription">Inscription</button>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-link" id="btn-page-connexion">Déjà membre ? Se
+                                connecter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

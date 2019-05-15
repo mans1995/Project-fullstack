@@ -1,0 +1,52 @@
+<div class="page" id="page-partenaires" style="display:none;">
+    <h2>Les partenaires</h2>
+    <div class="row m-2">
+        <div class="col">
+            <form id="form-rechercherPartenairesParNom">
+                <label for="nomLegal-rechercherPartenaires">Nom légal :</label>
+                <input type="text" id="nomLegal-rechercherPartenaires" class="form-control">
+                <div class="text-center">
+                    <button class="btn btn-primary my-1">Rechercher</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <form id="form-rechercherPartenairesParPays">
+                <label for="pays-rechercherPartenaires">Pays :</label>
+                <select id="pays-rechercherPartenaires" class="form-control">
+
+                </select>
+                <div class="text-center">
+                    <button class="btn btn-primary my-1">Rechercher</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <form id="form-rechercherPartenairesParVille">
+                <label for="ville-rechercherPartenaires">Ville :</label>
+                <input type="text" id="ville-rechercherPartenaires" class="form-control">
+                <div class="text-center">
+                    <button class="btn btn-primary my-1">Rechercher</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <button class="btn btn-secondary" id="resetListePartenaires">Reinitialiser / Rafraichir la liste</button>
+    <div class="table-responsive">
+        <table class="table text-center my-2 tablePartenaires">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Nom légal</th>
+                    <!-- <th scope="col">A propos</th> -->
+                    <th scope="col">Localisation</th>
+                    <th scope="col">Contact(tel/email)</th>
+                    <th scope="col">Site web</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>

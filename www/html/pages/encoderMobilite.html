@@ -1,0 +1,43 @@
+<div class="page" id="page-encoderMobilite" style="display:none;">
+    <h2 id="titre-encoderMobilite">Encoder des mobilités</h2>
+    <form id="form-mobilite" class="mt-4">
+        <fieldset class="mobilite rounded border p-4 form-group">
+            <legend class="w-auto my-0">
+                <h3 class="titre-choix">Choix 1</h3>
+            </legend>
+            <div class="form-group row groupProg">
+                <label for="selectProg" class="col-lg-3 col-xl-2 col-form-label text-lg-right">Programme :</label>
+                <select id="selectProg" class="form-control col-lg-8 selectProg">
+                </select>
+            </div>
+            <div class="form-group row groupMob">
+                <label for="selectMob" class="col-lg-3 col-xl-2  col-form-label text-lg-right">Mobilité :</label>
+                <select id="selectMob" class="form-control col-lg-8 selectMob">
+                    <option value="SMS">SMS</option>
+                    <option value="SMP">SMP</option>
+                </select>
+            </div>
+            <div class="form-group row groupPart">
+                <label for="selectPart" class="col-lg-3 col-xl-2 col-form-label text-lg-right">Partenaire :</label>
+                <select id="selectPart" class="form-control col-lg-8 partenaire selectPart">
+                </select>
+            </div>
+            <div class="form-group row groupPays" style="display:none;">
+                <label for="selectPays" class="col-lg-3 col-xl-2 col-form-label text-lg-right">Pays :</label>
+                <select id="selectPays" class="form-control col-lg-8 selectPays">
+                </select>
+            </div>
+            <div class="form-group row groupQuadri">
+                <label for="selectQuadri" class="col-lg-3 col-xl-2 col-form-label text-lg-right">Quadrimestre :</label>
+                <select id="selectQuadri" class="form-control col-lg-8 selectQuadri">
+                    <option value="">--- Non défini ---</option>
+                    <option value="Q1">Q1</option>
+                    <option value="Q2">Q2</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+    <button type="button" class="btn btn-secondary float-right m-2 mt-3" id="btn-ajouter-mob">Ajouter d'autres
+        choix</button>
+    <button type="button" class="btn btn-primary float-right m-2 mt-3" id="btn-envoyer-mob">Envoyer la demande</button>
+</div>

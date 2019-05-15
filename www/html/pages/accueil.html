@@ -1,0 +1,135 @@
+    <div class="page" id="page-accueil" style="display:none;">
+        <div class="text-center">
+            <h2>Faire des recherches sur :</h2>
+        </div>
+        <div class="text-center btn-group-lg my-2">
+            <button type="button" class="btn btn-secondary m-3" id="btn-recherche-partenaires">Les partenaires</button>
+            <button type="button" class="btn btn-secondary m-3" id="btn-recherche-mobilites">Les mobilités</button>
+            <button type="button" class="btn btn-secondary m-3" id="btn-recherche-etudiants">Les étudiants</button>
+        </div>
+        <hr>
+        <div id="demandes-etud" style="display:none;">
+            <div class="text-center">
+                <h2>Mes mobilités</h2>
+                <div class="table-responsive">
+                    <table class="table text-center my-2" id="table-etud-mobilites">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Programme</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Partenaire</th>
+                                <th scope="col">Pays</th>
+                                <th scope="col">Année académique</th>
+                                <th scope="col">Etat</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <h2>Mes choix de mobilités</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-center my-2" id="table-etud-demandes">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Ordre cand.</th>
+                            <th scope="col">Ordre préf.</th>
+                            <th scope="col">Programme</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Partenaire</th>
+                            <th scope="col">Pays</th>
+                            <th scope="col">Date de la demande</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="demandes-prof" style="display:none;">
+            <div class="text-center">
+                <h2>Toutes les demandes de mobilités</h2>
+            </div>
+            <button class="btn btn-info" id="btn-extraireCsv">Extraire un fichier <span
+                    class="badge badge-primary">.csv</span></button>
+            <div class="table-responsive">
+                <table class="table table-fixed text-center table-bordered my-2" id="table-demandes">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Ordre cand.</th>
+                            <th scope="col">Nom et prénom</th>
+                            <th scope="col">Département</th>
+                            <th scope="col">Ordre préf.</th>
+                            <th scope="col">Programme</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Quadri</th>
+                            <th scope="col">Partenaire</th>
+                            <th scope="col">Pays</th>
+                            <th scope="col">Date de la demande</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="accueilAnnulerMobilite" tabindex="-1" role="dialog"
+            aria-labelledby="accueilAnnulerMobiliteLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titre-accueilAnnulerMobilite"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form id="form-accueilAnnulerMobilite">
+                        <div class="modal-body">
+                            <h6>Entrez la raison de l'annulation :</h6>
+                            <input type="text" class="form-control" id="accueilAnnulerMobilite-raison" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn btn-primary"
+                                id="btn-accueilAnnulerMobilite-confirmer">Confirmer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="accueilConfirmerMobilite" tabindex="-1" role="dialog"
+            aria-labelledby="accueilConfirmerMobiliteLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titre-accueilConfirmerMobilite">Confirmer la mobilité</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form id="form-accueilConfirmerMobilite">
+                        <div class="modal-body">
+                            <h6>Êtes-vous sûr de vouloir confirmer cette demande de mobilité ?</h6>
+                            <label for="accueilConfirmerMobilite-quadri">Quadrimestre :</label>
+                            <select class="form-control" id="accueilConfirmerMobilite-quadri" required>
+                                <option value="Q1">Q1</option>
+                                <option value="Q2">Q2</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn btn-primary"
+                                id="btn-accueilConfirmerMobilite-confirmer">Confirmer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,95 @@
+<div class="page" id="page-mesInformations" style="display:none;">
+    <div class="tab-pane fade  show active" id="mesInformations" role="tabpanel">
+        <form id="form-mesInformations">
+            <div class="text-left">
+                <h2 id="nomComplet-mesInformations"></h2>
+                <h3 id="pseudo-mesInformations"></h3>
+                <h5 id="email-mesInformations"></h5>
+            </div>
+            <fieldset class="border border-secondary rounded-lg  p-5">
+                <legend class="w-auto">Informations personnelles</legend>
+                <label>Statut:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radioStatut" id="radioM" value="M">
+                    <label class="form-check-label" for="radioM">M.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radioStatut" id="radioMme" value="Mme">
+                    <label class="form-check-label" for="radioMme">Mme</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="radioStatut" id="radioMlle" value="Mlle">
+                    <label class="form-check-label" for="radioMlle">Mlle</label>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="calendar-mesInformations">Date de naissance :</label>
+                        <input type="date" id="calendar-mesInformations" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nationalite-mesInformations">Nationalité :</label>
+                        <select name="nationalite-mesInformations" id="nationalite-mesInformations"
+                            class="form-control nationalite-mesInscriptions"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse-mesInformations">Adresse :</label>
+                        <input type="text" id="adresse-mesInformations" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone-mesInformations">Téléphone :</label>
+                        <input type="tel" id="telephone-mesInformations" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexeM-mesInformations">Sexe:</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioSexe" id="sexeM-mesInformations"
+                                value="M" required>
+                            <label class="form-check-label" for="sexeM-mesInformations">M</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioSexe" id="sexeF-mesInformations"
+                                value="F" required>
+                            <label class="form-check-label" for="sexeF-mesInformations">F</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nbresAneesReussies-mesInformations">Nombres d'années réussies :</label>
+                        <input type="number" id="nbresAneesReussies-mesInformations" value="0" min="0"
+                            class="form-control">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="border border-secondary rounded-lg  p-5">
+                <legend class="w-auto">Compte bancaire</legend>
+                <div class="form-group">
+                    <label for="titulaireCompte-mesInformations">Titulaire du compte :</label>
+                    <input type="text" id="titulaireCompte-mesInformations"
+                        pattern="[A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*([ '-][A-ZÉÈÊËÀÂÇ][a-zéèêëàâç]*)*" title="ex : Nom Prenom"
+                        class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomBanque-mesInformations">Nom de la banque :</label>
+                    <input type="text" id="nomBanque-mesInformations" title="ex : Bnp fortis" class="form-control"
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <label for="iban-mesInformations">IBAN :</label>
+                        <input type="text" id="iban-mesInformations" pattern="^[a-zA-Z]{2}[0-9]{2}(?:[ ]?[0-9]{4}){3}$"
+                            title="ex : BE12 1234 1234 1234" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <label for="bic-mesInformations">BIC :</label>
+                        <input type="text" id="bic-mesInformations"
+                            pattern="([a-zA-Z]{4}[a-zA-Z]{2}[a-zA-Z0-9]{2}([a-zA-Z0-9]{3})?)" title="ex : BBRUBRBR"
+                            class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="text-right m-2 ">
+                <button class="btn btn-primary" id="btnModifier-mesInformations">Modifier</button>
+            </div>
+        </form>
+    </div>
+</div>
